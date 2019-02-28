@@ -96,16 +96,18 @@ p{
 
 .navbar-default .navbar-nav > .active>a,
 .navbar-default .navbar-nav > .active>a:hover,
-.navbar-default .navbar-nav > .active>a:focus,
+.navbar-default .navbar-nav > .active>a:focus
 {
 background-color: transparent;
 color: #129CF3;
+
 }
 
 
 
 
 /*Header*/
+
 
 .header{
     background-image: url("../images/header-bg.jpg");
@@ -116,11 +118,9 @@ color: #129CF3;
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover ;
-    height: 100vh;
- 
-    
-    
+    height: 100vh; 
 }
+
 
 
 .header-overlay{
@@ -136,11 +136,8 @@ height: 100vh;
 
 .logo{
     padding-bottom: 50px;
+    padding-top: 50px;
 }
-
-/*.header-text{
-    border: solid 1px green;
-}*/
 
 
 .header-text h1{

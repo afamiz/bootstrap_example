@@ -65,7 +65,7 @@ $(document).ready(function () {
 
 
 //add smooth scrollig//
-$document.ready(function () {
+$(document).ready(function () {
   'use strict';
 
   // Select all links with hashes
@@ -134,20 +134,24 @@ $(document).ready(function () {
 
     'use strict';
 
-    $("section").each(function){
+    $("section").each(function () {
 
       'use strict';
       var bb = $(this).attr("id");
       var hei = $(this).outerHeight();
-      var grttop = $(this).offset().top - 70
+      var grttop = $(this).offset().top - 70;
 
-      if ($(window).scrollTop() > grttop && $(window.scrollTop() < grttop + hei) {
+      if ($(window).scrollTop() > grttop && $(window).scrollTop() < grttop + hei) {
 
-        $(".navbar-nav li a[href='#"+bb+"']").parent().addClass("active");
+        $(".navbar-nav li a[href='#" + bb + "']").parent().addClass("active");
 
-        .navbar-nav li a[href='#about']"
-
+      } else {
+        $(".navbar-nav li a[href='#" + bb + "']").parent().removeClass("active");
       }
+
+
+
+
 
 
     });
@@ -155,11 +159,53 @@ $(document).ready(function () {
 
 
 
+  });
+
+  
+
+});
+
+
+// Add bx slider to screens
+
+$(document).ready(function(){
+
+
+$('.bxslider').bxSlider({
+
+
+slideWidth: 292.5,
+auto: true,
+minSlides: 1,
+maxSlides: 3,
+slideMargin: 50
+
 });
 
 
 
+});
 
+
+//Add Counter
+
+$(document).ready(function(){
+
+$('.counter-num').counterUp({
+delay: 10,
+time: 2000
+
+
+});
+});
+
+//Add animation/ Initialize Wow
+
+$(document).ready(function(){
+
+  'use strict';
+
+  new WOW().init();
 
 
 });
